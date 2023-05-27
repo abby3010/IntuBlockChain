@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Blockchain is an emerging technology so here we provide an enhanced and up-to-date intuition tool for better understanding and implementation of concepts.">
+    <meta name="author" content="Purva Anjarlekar, Abhay Ubhale">
+    <meta name="theme-color" content="#121212">
+    <meta name="keywords" content="Blockchain, Block, Crypto, Cryptocurrency, Bitcoin, SHA, Mine, Mining, SHA256, Hash, Hashing, Ledger, Immutable, Security, Intuition, Blockchain Intuition, Mining Pools, Mempools, Proof of Work, Proof of State, Magic Number, Nonce, Fault Tolerance, Consensus, Consensus Protocol, Genesis Block, Ethereum, Corda, Merkle Trees, Censorship, Decentralized, White Paper">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Tags (OGT) -->
+    <meta property="og:title" content="IntuBlockChain" />
+    <meta property="og:description" content="An enhanced and up-to-date blockchain intuition tool for better understanding and implementation of concepts." />
+    <meta property="og:image" content="https://www.thestreet.com/.image/t_share/MTY3NTM5MzU4ODE0MTE5ODIy/what-is-blockchain-technology-and-how-does-it-work.png" />
+
+    <link rel="stylesheet preload" href="/static/css/default.css" as="style">
+    <link rel="stylesheet preload" href="/static/css/layout.css" as="style">
+    <link rel="stylesheet preload" href="/static/css/media-queries.css" as="style">
+    <link rel="stylesheet" href="/static/css/blockchain.css" as="style">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <title>Blockchain | IntuBlockChain</title>
+</head>
+
+<body>
+    <!-- Header
+   ================================================== -->
+    <header>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="logo">
+                    <a class="heading" href="/">IntuBlockChain</a>
+                </div>
+                <nav id="nav-wrap">
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                    <ul id="nav" class="nav">
+                        <li><a href="/">Hash</a></li>
+                        <li><a href="/block.html">Block</a></li>
+                        <li><a href="/blockchain.html">Blockchain</a></li>
+                    </ul>
+                    <!-- end #nav -->
+                </nav>
+                <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <ul class="hs" id="blockchain"></ul>
+
+
+    <section>
+        <div id="block">
+            <h2>Add data in new block</h2>
+            <div id="contact-form">
+                <textarea class="input-field" id="newdata" rows="5" cols="50" placeholder="Data"
+                    style="font-size: 20px;"></textarea>
+                <button type="submit" class="submit" onclick="add_block()">Add Block</button>
+            </div>
+        </div>
+    </section>
+    <script src="static/js/sha256.js"></script>
+    <script src="static/js/blockchain.js"></script>
+</body>
+
+</html>

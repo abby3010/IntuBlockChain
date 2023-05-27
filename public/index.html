@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Blockchain is an emerging technology so here we provide an enhanced and up-to-date intuition tool for better understanding and implementation of concepts.">
+        <meta name="author" content="Purva Anjarlekar, Abhay Ubhale">
+        <meta name="theme-color" content="#121212">
+        <meta name="keywords" content="Blockchain, Block, Crypto, Cryptocurrency, Bitcoin, SHA, Mine, Mining, SHA256, Hash, Hashing, Ledger, Immutable, Security, Intuition, Blockchain Intuition, Mining Pools, Mempools, Proof of Work, Proof of State, Magic Number, Nonce, Fault Tolerance, Consensus, Consensus Protocol, Genesis Block, Ethereum, Corda, Merkle Trees, Censorship, Decentralized, White Paper">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Open Graph Tags (OGT) -->
+        <meta property="og:title" content="IntuBlockChain" />
+        <meta property="og:description" content="An enhanced and up-to-date blockchain intuition tool for better understanding and implementation of concepts." />
+        <meta property="og:image" content="https://www.thestreet.com/.image/t_share/MTY3NTM5MzU4ODE0MTE5ODIy/what-is-blockchain-technology-and-how-does-it-work.png" />
+
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet preload" href="/static/css/default.css" as="style">
+        <link rel="stylesheet preload" href="/static/css/layout.css" as="style">
+        <link rel="stylesheet preload" href="/static/css/media-queries.css" as="style">
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <title>IntuBlockChain</title>
+    </head>
+
+    <body>
+        <!-- Header
+   ================================================== -->
+        <header>
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="logo">
+                        <a href="/">IntuBlockChain</a>
+                    </div>
+                    <nav id="nav-wrap">
+                        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                        <ul id="nav" class="nav">
+                            <li><a href="/">Hash</a></li>
+                            <li><a href="/block.html">Block</a></li>
+                            <li><a href="/blockchain.html">Blockchain</a></li>
+                        </ul>
+                        <!-- end #nav -->
+                    </nav>
+                    <!-- end #nav-wrap -->
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+        <div class="content-outer">
+            <div id="page-content" class="row page">     
+                <div id="primary" class="twelve columns">
+                    <section>
+                        <h2>SHA256 Hash</h2>
+                        <div id="contact-form">
+                            <textarea
+                                id="textarea"
+                                rows="8"
+                                cols="50"
+                                placeholder="Data"
+                                style="font-size: 20px;"
+                            ></textarea>
+                            <div id="finalkey">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+                
+        <!-- <br> <br> <br> -->
+        <script>
+        var input = document.getElementById("textarea");
+        input.addEventListener('input', function(event){
+            document.getElementById("finalkey").innerText = SHA256(event.target.value);
+        })
+        </script>
+        <script src="static/js/sha256.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.3.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.3.1/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>

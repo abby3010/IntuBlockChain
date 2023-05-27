@@ -1,0 +1,118 @@
+:root {
+    --gutter: 20px;
+}
+
+.hs>li, .item {
+    scroll-snap-align: center;
+    padding: calc(var(--gutter) / 2 * 1.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* GREY BGCOLOR (DEFAULT)*/
+    background: #C0C0C0;
+    
+    /* RED BGCOLOUR (INCORRECT CHAIN) */
+    /* background: #ecafaf; */
+    border-radius: 8px;
+    height: 100%;
+    /* width: 80%; */
+}
+
+.hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+    height: 100%;
+}
+
+.text-input {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.text-input label {
+    width: 20%;
+    font-weight: bold;
+}
+
+.label {
+    align-self: flex-start;
+}
+
+.input-field {
+    width: 100%;
+    margin-left: 10px;
+    display: block;
+    padding: 14px 10px;
+    margin: 0 0 24px 0;
+    border: 0;
+    outline: none;
+    min-width: 260px;
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1c2b2b;
+    background: #ffffff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.input-field:focus {
+    color: #B3B7BC;
+    background-color: #3d4145;
+}
+
+#block {
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    #block {
+        margin-top: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .text-input {
+        display: block;
+        width: 100%;
+    }
+    .text-input label {
+        width: 100%;
+    }
+
+    .hs{
+        padding: 10%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hs{
+        padding: 5%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .hs{
+        padding: 0%;
+        display: block;
+    }
+}
